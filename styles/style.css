@@ -5,6 +5,11 @@
     transition: all 0.3s;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
 body{
     background: url(../img/background.jpg) top no-repeat #0A1012;
     background-size: 100%;
@@ -73,8 +78,6 @@ nav ul li{
 }
 
 nav a{
-    color: #fff;
-    text-decoration: none;
     display: block;
     padding: 5px 15px;
     border: 1px solid rgba(0,0,0,0);
@@ -146,8 +149,6 @@ nav a:active{
     padding: 5px;
     display: flex;
     align-items: flex-end;
-    color: #fff;
-    text-decoration: none;
 }
 
 .gallery-big:hover, .gallery-small:hover {
@@ -162,7 +163,7 @@ nav a:active{
     width: 24%;
 }
 
-.gallery-big h3, .gallery-small h3, .date{
+.gallery-big h3, .gallery-small h3, .date, .promotion h3{
     margin: 0px;
     width: 100%;
 }
@@ -188,4 +189,72 @@ nav a:active{
     border-bottom-style: none;
     width: 70%;
     margin: 15px auto;
+}
+
+/* galeria wydarzeń */
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #070a0b;
+    margin-top: 30px;
+    padding: 30px 0px;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column{
+    width: 24%;
+    display: block;
+}
+
+.social{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.social:hover{
+    color: #0065ea;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0px;
+}
+
+/* Promocja */
+.promotion{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0px;    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00aee3+0,0065ea+99 */
+    background: #00aee3; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #00aee3 0%, #0065ea 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aee3', endColorstr='#0065ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.promotion h3{
+    text-align: center;
+}
+
+/* Promocja */
+
+/* Filters */
+.filtr{
+    margin-bottom: 20px;
+}
+
+.filters{
+    display: none;
+    margin-bottom: 20px;
 }

@@ -46,7 +46,9 @@
                 </div>
                 <span id="koncerty">
                     <h3>Koncerty</h3>
+                    <button class="button filtr" onClick="filters()">Filtrowanie</button>
                 </span>
+                <div class="filters" id="filters">TEST</div>
                 <div class="gallery">
                     <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
                         <span class="info">
@@ -115,9 +117,7 @@
                 </span>
             </div>
             
-            <aside class="promotion">
-                Promka
-            </aside>
+<?php include 'promotion.php' ?>
             
             <div class="container">
                  <span id="festiwale">
