@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html lang="pl" dir="ltr">
-    <head>
-        <meta charset="utf-8">
 
-        <meta name="description" content="Super hiper wpis na temat czegokolwiek">
-        <meta name="keywords" content="Bardzo ważne słowa kluczowe">
-        
-        <link rel="index" title="Strona główna" href="index.html">
-        
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
-        <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <header>
-            <div class="container" id="header">
-                <img src="img/logo.png" alt="logo">
-                <nav>
-                    <ul>
-                        <li><a href="#">Koncerty</a></li>
-                        <li><a href="#">Festiwale</a></li>
-                        <li><a href="#">Wydarzenia</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-                <span class="login">
-                    <a href="#" class="button">Zaloguj</a>
-                </span>
-            </div>
-        </header>
-        
+        <?php include 'header.php' ?>
         <main>
             <div class="container">
                 <div class="search">
@@ -173,12 +139,4 @@
                 <button class="more"> Więcej </button>
             </div>
         </main>
-        
-        <footer>
-            <span> Kolumna 1 </span>
-            <span> Kolumna 2 </span>
-            <span> Kolumna 3 </span>
-            <span> Kolumna 4 </span>
-        </footer>
-    </body>
-</html>
+<?php include 'footer.php' ?>
