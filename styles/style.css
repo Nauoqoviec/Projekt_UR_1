@@ -141,14 +141,18 @@ nav a:active{
 }
 
 .gallery-big, .gallery-small {
+    background-size: cover;
     height: 200px;
-    background-color: blueviolet;
     margin-bottom: 10px;
     padding: 5px;
     display: flex;
     align-items: flex-end;
     color: #fff;
     text-decoration: none;
+}
+
+.gallery-big:hover, .gallery-small:hover {
+    box-shadow: 0px 0px 12px -1px rgba(69,143,255,1);
 }
 
 .gallery-big{
