@@ -25,6 +25,7 @@ body{
     cursor: pointer;
     color: #fff;
     text-decoration: none;
+    border-style: none;
 }
 
 .button:hover{
@@ -94,6 +95,8 @@ nav a:active{
 }
 /* Nawigacja */
 
+/* szukajka */
+
 
 .search{
     height: 80vh;
@@ -102,7 +105,31 @@ nav a:active{
     align-items: center;
 }
 
+.input-search{
+    /*background-color: rgba(0,160,227,0.1);*/
+    background-color: rgba(255,255,255,0.1);
+    width: 25%;
+    padding: 5px 15px;
+    border: 1px solid #00A0E3;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right-style: none;
+    color: #fff;
+}
 
+.button-search{
+    height: 35px;
+    width: 45px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #00A0E3;
+    border-left-style: none;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    cursor:pointer;
+}
+
+/* szukajka */
 
 .gallery, .popular{
     display: flex;
