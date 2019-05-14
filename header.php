@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/onscroll.js"></script>
+        
     
         <!--[if lt IE 9]>
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
@@ -18,8 +21,8 @@
     </head>
     <body>
         <header>
-            <div class="container" id="header">
-                <img src="img/logo.png" alt="logo">
+            <div class="container header">
+                <img src="img/logo.png" alt="logo" id="logo">
                     <?php include 'navigation.php' ?>
                 <span class="login">
                     <a href="#" class="button">Zaloguj</a>

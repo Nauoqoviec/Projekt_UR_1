@@ -2,13 +2,12 @@
 
 *{
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 body{
     background: url(../img/background.jpg) top no-repeat #0A1012;
     background-size: 100%;
-    
-    height: 100000px;
     
     color: #fff;
     font: 300 20px 'Exo 2', sans-serif;
@@ -23,7 +22,7 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aee3', endColorstr='#0065ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
     display: block;    
-    padding: 5px 15px;
+    padding: 5px 25px;
     border-radius: 30px;
     cursor: pointer;
     color: #fff;
@@ -46,13 +45,13 @@ body{
     margin: 0px auto;
 }
 
-header, #header{
+header, .header{
     height: 90px;
     display: flex;
     align-items: center;
 }
 
-#header{
+.header{
     justify-content: space-between;
 }
 
@@ -178,4 +177,15 @@ nav a:active{
     font-weight: 700;
     color: #fff;
     padding: 3px;
+}
+
+.more{
+    margin: 0px auto;
+}
+
+.line{
+    border-top: 1px solid rgba(69,143,255,1);
+    border-bottom-style: none;
+    width: 70%;
+    margin: 15px auto;
 }

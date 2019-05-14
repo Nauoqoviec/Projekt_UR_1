@@ -1,4 +1,3 @@
-
         <?php include 'header.php' ?>
         <main>
             <div class="container">
@@ -45,65 +44,66 @@
                         </span>
                     </a>
                 </div>
-                <span>
+                <span id="koncerty">
                     <h3>Koncerty</h3>
                 </span>
                 <div class="gallery">
-                    <a href="#" class="gallery-big">
+                    <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
                         <span class="info">
                             <h3>Nocny Kochanek</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a href="#" class="gallery-big">
+                    <a href="#" class="gallery-big" style="background-image: url('img/aciddrinkers.jpg');">
                         <span class="info">
+                            <span class="popular-event">Popularne wydarzenie</span>
                             <h3>Acid Drinkers</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a class="gallery-small">
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
+                        <span class="info">
+                            <h3>KSU</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
+                        <span class="info">
+                            <h3>Power Of Trinity</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
+                        <span class="info">
+                            <h3>Illusion</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
                         <span class="info">
                             <h3>Farben Lehre</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a class="gallery-small">
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
                         <span class="info">
-                            <h3>Farben Lehre</h3>
+                            <h3>KSU</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a class="gallery-small">
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
                         <span class="info">
-                            <h3>Farben Lehre</h3>
+                            <h3>Power Of Trinity</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a class="gallery-small">
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
                         <span class="info">
-                            <h3>Farben Lehre</h3>
+                            <h3>Illusion</h3>
                             <span class="date">Katowice, 23.05.2019</span>
                         </span>
                     </a>
-                    <a class="gallery-small">
-                        <span class="info">
-                            <h3>Farben Lehre</h3>
-                            <span class="date">Katowice, 23.05.2019</span>
-                        </span>
-                    </a>
-                    <a class="gallery-small">
-                        <span class="info">
-                            <h3>Farben Lehre</h3>
-                            <span class="date">Katowice, 23.05.2019</span>
-                        </span>
-                    </a>
-                    <a class="gallery-small">
-                        <span class="info">
-                            <h3>Farben Lehre</h3>
-                            <span class="date">Katowice, 23.05.2019</span>
-                        </span>
-                    </a>
-                    <a class="gallery-small">
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
                         <span class="info">
                             <h3>Farben Lehre</h3>
                             <span class="date">Katowice, 23.05.2019</span>
@@ -120,23 +120,143 @@
             </aside>
             
             <div class="container">
-                 <span>
+                 <span id="festiwale">
                     <h3>Festiwale</h3>
                 </span>
                 <div class="gallery">
-                
+                    <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
+                        <span class="info">
+                            <h3>Nocny Kochanek</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a href="#" class="gallery-big" style="background-image: url('img/aciddrinkers.jpg');">
+                        <span class="info">
+                            <span class="popular-event">Popularne wydarzenie</span>
+                            <h3>Acid Drinkers</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
+                        <span class="info">
+                            <h3>KSU</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
+                        <span class="info">
+                            <h3>Power Of Trinity</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
+                        <span class="info">
+                            <h3>Illusion</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
+                        <span class="info">
+                            <h3>Farben Lehre</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
+                        <span class="info">
+                            <h3>KSU</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
+                        <span class="info">
+                            <h3>Power Of Trinity</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
+                        <span class="info">
+                            <h3>Illusion</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
+                        <span class="info">
+                            <h3>Farben Lehre</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
                 </div>
-                <button class="more"> Więcej </button>
+                <button class="more button"> Więcej </button>
                 
                 <hr class="line">
                 
                 <span>
-                    <h3>Wydarzenia</h3>
+                    <h3 id="wydarzenia">Wydarzenia</h3>
                 </span>
                 <div class="gallery">
-                
+                    <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
+                        <span class="info">
+                            <h3>Nocny Kochanek</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a href="#" class="gallery-big" style="background-image: url('img/aciddrinkers.jpg');">
+                        <span class="info">
+                            <span class="popular-event">Popularne wydarzenie</span>
+                            <h3>Acid Drinkers</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
+                        <span class="info">
+                            <h3>KSU</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
+                        <span class="info">
+                            <h3>Power Of Trinity</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
+                        <span class="info">
+                            <h3>Illusion</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
+                        <span class="info">
+                            <h3>Farben Lehre</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/KSU.png');">
+                        <span class="info">
+                            <h3>KSU</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/pot.png');">
+                        <span class="info">
+                            <h3>Power Of Trinity</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/illusion.jpg');">
+                        <span class="info">
+                            <h3>Illusion</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
+                    <a class="gallery-small" style="background-image: url('img/fl.jpg');">
+                        <span class="info">
+                            <h3>Farben Lehre</h3>
+                            <span class="date">Katowice, 23.05.2019</span>
+                        </span>
+                    </a>
                 </div>
-                <button class="more"> Więcej </button>
+                <button class="more button"> Więcej </button>
             </div>
         </main>
 <?php include 'footer.php' ?>
