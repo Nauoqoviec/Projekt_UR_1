@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,300i,700,800');
 
 body{
     background: url(../img/background.jpg) top no-repeat #0A1012;
@@ -7,7 +7,34 @@ body{
     height: 100000px;
     
     color: #fff;
-    font: 400 20px 'Exo 2', sans-serif;
+    font: 300 20px 'Exo 2', sans-serif;
+}
+
+.button{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00aee3+0,0065ea+99 */
+    background: #00aee3; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #00aee3 0%, #0065ea 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aee3', endColorstr='#0065ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    display: block;    
+    box-sizing: border-box;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0065ea+1,00aee3+100 */
+    background: #0065ea; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #0065ea 1%, #00aee3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #0065ea 1%,#00aee3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #0065ea 1%,#00aee3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065ea', endColorstr='#00aee3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .container{
@@ -25,18 +52,57 @@ header, #header{
     justify-content: space-between;
 }
 
+/* Nawigacja */
+
+nav {
+    width: 40%;
+}
+
 nav ul {
     list-style: none;
     padding: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul li{
     display: inline-block;
 }
 
-.search{
-    height: 80vh
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 30px;
 }
+
+
+nav a:hover{
+    border: 1px solid #00A0E3;
+}
+
+nav a:active{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00aee3+0,0065ea+99 */
+    background: #00aee3; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #00aee3 0%, #0065ea 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #00aee3 0%,#0065ea 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aee3', endColorstr='#0065ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/* Nawigacja */
+
+
+.search{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .gallery, .popular{
     display: flex;
@@ -44,19 +110,16 @@ nav ul li{
     flex-wrap: wrap;
 }
 
-.gallery-big{
-    width: 49.4%;
-    height: 120px;
+.gallery-big, .gallery-small {
+    height: 150px;
     background-color: blueviolet;
     margin-bottom: 10px
+}
+
+.gallery-big{
+    width: 49.4%;
 }
 
 .gallery-small{
     width: 24%;
-    height: 120px;
-    background-color: blueviolet;
-    margin-bottom: 10px
-}
-
-
 }
