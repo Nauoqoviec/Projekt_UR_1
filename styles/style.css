@@ -275,3 +275,67 @@ footer ul{
     font-size: 14px;
     padding: 3px;
 }
+
+/* Filters */
+
+/* Login */
+.main_login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_login .login, .register{
+    background-color: #0f0f0f;
+    width:50%;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_form, .login_alt{
+    width: 49.5%;
+    padding: 10px;
+}
+
+.input_login{
+    background-color: #000;
+    border: 1px solid #00aee3;
+    color: #fff;
+    font-size: 17px;
+    padding: 3px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.login_alt img{
+    height: 40px;
+    margin: 5px auto;
+    
+}
+
+.login_alt .button{
+    text-align: center;
+}
+
+.register{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.register form span{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.register input{
+    width:100%;
+}
+
+.register input[type="radio"]{
+    width:10%;
+}
