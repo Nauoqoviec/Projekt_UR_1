@@ -136,6 +136,13 @@ nav a:active{
 /* szukajka */
 
 /* galeria wydarzeń */
+#koncerty, #festiwale, #wydarzenia{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .gallery, .popular{
     display: flex;
     justify-content: space-between;
@@ -250,11 +257,21 @@ footer ul{
 /* Promocja */
 
 /* Filters */
-.filtr{
-    margin-bottom: 20px;
-}
 
 .filters{
     display: none;
     margin-bottom: 20px;
+}
+
+.filters form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters input{
+    background: none;
+    border: 1px solid #00aee3;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px;
 }

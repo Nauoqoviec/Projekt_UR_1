@@ -46,9 +46,13 @@
                 </div>
                 <span id="koncerty">
                     <h3>Koncerty</h3>
-                    <button class="button filtr" onClick="filters()">Filtrowanie</button>
+                    <button class="button filtr" onClick="filters_k()">Filtrowanie</button>
                 </span>
-                <div class="filters" id="filters">TEST</div>
+                <div class="filters" id="filters_k">
+                    <form>
+                        <?php include 'form.php' ?>
+                    </form>
+                </div>
                 <div class="gallery">
                     <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
                         <span class="info">
@@ -122,7 +126,13 @@
             <div class="container">
                  <span id="festiwale">
                     <h3>Festiwale</h3>
+                    <button class="button filtr" onClick="filters_f()">Filtrowanie</button>
                 </span>
+                <div class="filters" id="filters_f">
+                    <form>
+                        <?php include 'form.php' ?>
+                    </form>
+                </div>
                 <div class="gallery">
                     <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
                         <span class="info">
@@ -190,9 +200,15 @@
                 
                 <hr class="line">
                 
-                <span>
-                    <h3 id="wydarzenia">Wydarzenia</h3>
+                <span id="wydarzenia">
+                    <h3>Wydarzenia</h3>
+                    <button class="button filtr" onClick="filters_w()">Filtrowanie</button>
                 </span>
+                <div class="filters" id="filters_w">
+                    <form>
+                        <?php include 'form.php' ?>
+                    </form>
+                </div>
                 <div class="gallery">
                     <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
                         <span class="info">
