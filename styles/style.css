@@ -415,3 +415,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .event .month, .event .day{
     text-align: center;
 }
+
+.order{
+    width: 70% !important;
+}
+
+.order .price{
+    width: 60%;
+    padding-left: 10%;
+}
+
+.order .num{
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #272727;
+    margin: 0px 10px;
+    text-align: center;
+}

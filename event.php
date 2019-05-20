@@ -5,7 +5,19 @@
     <?php include 'header.php' ?>
     
     <div class="bg_event" style="background-image: url('img/nk.jpg')">
-        <h3 class="title_event">Nocny Kochanek</h3>
+        <table class="order_title">
+            <tr>
+                <td colspan="2"><h3>Nocny Kochanek</h3></td>
+            </tr>
+            <tr>
+                <td class="day">22</td>
+                <td class="title">KATOWICE, Polska</td>
+            </tr>
+            <tr>
+                <td class="month">LIP</td>
+                <td class="place">Katowice, Spodek - Sob. 21.30</td>
+            </tr>
+        </table>
     </div>
     <div class="container events">
         <div class="content">
@@ -15,9 +27,73 @@
                     <tr>
                         <td class="day">A1</td>
                         <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2">+</td>
-                        <td rowspan="2"><div class="num">0</div>
-                        <td class="btn_minus" rowspan="2">-</td>
+                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                        <td rowspan="2"><div class="num">0</div></td>
+                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="month">Sektor</td>
+                    </tr>
+                </table>
+                <button class="button">Zamów</button>
+            </div>
+            
+            <div class="event">
+                <table class="order">
+                    <tr>
+                        <td class="day">A2</td>
+                        <td class="price" rowspan="2">200 zł</td>
+                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                        <td rowspan="2"><div class="num">0</div></td>
+                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="month">Sektor</td>
+                    </tr>
+                </table>
+                <button class="button">Zamów</button>
+            </div>
+            
+            <div class="event">
+                <table class="order">
+                    <tr>
+                        <td class="day">B1</td>
+                        <td class="price" rowspan="2">200 zł</td>
+                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                        <td rowspan="2"><div class="num">0</div></td>
+                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="month">Sektor</td>
+                    </tr>
+                </table>
+                <button class="button">Zamów</button>
+            </div>
+            
+            <div class="event">
+                <table class="order">
+                    <tr>
+                        <td class="day">B2</td>
+                        <td class="price" rowspan="2">200 zł</td>
+                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                        <td rowspan="2"><div class="num">0</div></td>
+                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td class="month">Sektor</td>
+                    </tr>
+                </table>
+                <button class="button">Zamów</button>
+            </div>
+            
+            <div class="event">
+                <table class="order">
+                    <tr>
+                        <td class="day">VIP</td>
+                        <td class="price" rowspan="2">200 zł</td>
+                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                        <td rowspan="2"><div class="num">0</div></td>
+                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
                     </tr>
                     <tr>
                         <td class="month">Sektor</td>
