@@ -339,3 +339,64 @@ footer ul{
 .register input[type="radio"]{
     width:10%;
 }
+
+/* login */
+
+/* Calendar */
+
+.bg_event{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute; 
+        z-index: -1; 
+        top: 0px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.events{
+    margin-top: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    width: 74%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event{
+    background-color: #070A0B;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.event table{
+    width: 75%;
+}
+
+.event .day, .event .title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.event .month, .event .place{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.event .month, .event .day{
+    text-align: center;
+}
