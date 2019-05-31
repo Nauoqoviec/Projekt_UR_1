@@ -1,4 +1,6 @@
-<?php include 'head.php' ?>
+<?php 
+    include 'head.php'; 
+?>
 
 <body>
 
@@ -6,10 +8,10 @@
     <main class="container main_login">
         <div class="login">
             <div class="login_form">
-                <form>
-                    <input type="text" name="login" placeholder="Login lub e-mail" class="input_login">
-                    <input type="password" name="password" placeholder="Hasło" class="input_login">
-                    <button type="submit" class="button">Zaloguj</button>
+                <form action="php/zaloguj.php" method="POST">
+                    <input type="text" name="login" placeholder="Login lub e-mail" class="input_login" />
+                    <input type="password" name="haslo" placeholder="Hasło" class="input_login" />
+                    <input type="submit" class="button" value="Zaloguj" />
                 </form>
             </div>
             <div class="login_alt">
