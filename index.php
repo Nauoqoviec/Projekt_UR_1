@@ -42,7 +42,7 @@
                         <span class="date">Katowice, 23.05.2019</span>
                     </span>
                 </a>
-                <a href="#" class="gallery-big" style="background-image: url('img/nk.jpg')">
+                <a href="calendar_event.php?zespol_id=1&nazwa=Nocny+Kochanek" class="gallery-big" style="background-image: url('img/nk.jpg')">
                     <span class="info">
                         <h3>Nocny Kochanek</h3>
                         <span class="date">Katowice, 23.05.2019</span>
