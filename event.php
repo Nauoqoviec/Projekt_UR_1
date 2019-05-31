@@ -1,27 +1,25 @@
-<?php include 'head.php' ?>
+<?php 
+
+    include 'head.php';
+
+    require_once "php/connect.php";
+
+?>
 
 <body>
 
-    <?php include 'header.php' ?>
-    
-    <div class="bg_event" style="background-image: url('img/nk.jpg')">
-        <table class="order_title">
-            <tr>
-                <td colspan="2"><h3>Nocny Kochanek</h3></td>
-            </tr>
-            <tr>
-                <td class="day">22</td>
-                <td class="title">KATOWICE, Polska</td>
-            </tr>
-            <tr>
-                <td class="month">LIP</td>
-                <td class="place">Katowice, Spodek - Sob. 21.30</td>
-            </tr>
-        </table>
+    <?php
+        include 'header.php';
+        $dane = dane_zespolu($_GET['zespol_id']);
+        $info = koncert_info($_GET['koncert_id']);
+    ?>
+    <div class="bg_event" style="background-image: url('img/nk.jpg')" >
+        <h3 class="title_event"><?php echo $dane['nazwa'] ?></h3>
     </div>
     <div class="container events">
         <div class="content">
-        <h4> Nadchodzące wydarzenia</h4>
+        <h3 style="margin-bottom: 0px;"> <?php echo $info['Data'].' '.$info['Kraj'].', '.$info['Miasto'].' > '.$info['Miejsce']; ?> </h3>
+        <h4> Bilety na to wydarzenie </h4>
             <div class="event">
                 <table class="order">
                     <tr>
