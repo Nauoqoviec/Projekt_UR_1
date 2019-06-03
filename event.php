@@ -1,9 +1,8 @@
 <?php 
-
     include 'head.php';
-
     require_once "php/connect.php";
-//test
+
+    
 ?>
 
 <body>
@@ -20,88 +19,132 @@
         <div class="content">
         <h3 style="margin-bottom: 0px;"> <?php echo $info['Data'].' '.$info['Kraj'].', '.$info['Miasto'].' > '.$info['Miejsce']; ?> </h3>
         <h4> Bilety na to wydarzenie </h4>
-            <div class="event">
-                <table class="order">
-                    <tr>
-                        <td class="day">A1</td>
-                        <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
-                        <td rowspan="2"><div class="num">0</div></td>
-                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
-                    </tr>
-                    <tr>
-                        <td class="month">Sektor</td>
-                    </tr>
-                </table>
-                <button class="button">Zamów</button>
-            </div>
+            <form action="php/zamowienie.php" method="POST">
+                <div class="event">
+                    <table class="order">
+                        <tr>
+                            <td class="day"><?php echo $info['sektor1_nazwa'] ?></td>
+                            <td class="price" rowspan="2"><?php echo $info['sektor1_cena'].' zł' ?></td>
+                            <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                            <td rowspan="2">
+                                <input type="text" class="num" placeholder="0" name="num">
+                                <input type="hidden" name="cena" value="<?php echo $info['sektor1_cena'] ?>"/>
+                                <input type="hidden" name="ilosc" value="<?php echo $info['sektor1_ilosc'] ?>"/>
+                                <input type="hidden" name="nazwa" value="sektor1"/>
+                                <input type="hidden" name="id" value="<?php echo $_GET['koncert_id']; ?>"/>
+                            </td>
+                            <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="month">Sektor</td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Zamów">
+                    
+                </div>
+            </form>
+            <form action="php/zamowienie.php" method="POST">
+                <div class="event">
+                    <table class="order">
+                        <tr>
+                            <td class="day"><?php echo $info['sektor2_nazwa'] ?></td>
+                            <td class="price" rowspan="2"><?php echo $info['sektor2_cena'].' zł' ?></td>
+                            <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                            <td rowspan="2">
+                                <input type="text" class="num" placeholder="0" name="num"> 
+                                <input type="hidden" name="cena" value="<?php echo $info['sektor2_cena'] ?>"/>
+                                <input type="hidden" name="ilosc" value="<?php echo $info['sektor2_ilosc'] ?>"/>
+                                <input type="hidden" name="nazwa" value="sektor2"/>
+                                <input type="hidden" name="id" value="<?php $_GET['koncert_id'] ?>"/>
+                            </td>
+                            <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="month">Sektor</td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Zamów">
+                    
+                </div>
+            </form>
             
-            <div class="event">
-                <table class="order">
-                    <tr>
-                        <td class="day">A2</td>
-                        <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
-                        <td rowspan="2"><div class="num">0</div></td>
-                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
-                    </tr>
-                    <tr>
-                        <td class="month">Sektor</td>
-                    </tr>
-                </table>
-                <button class="button">Zamów</button>
-            </div>
+            <form action="php/zamowienie.php" method="POST">
+                <div class="event">
+                    <table class="order">
+                        <tr>
+                            <td class="day"><?php echo $info['sektor3_nazwa'] ?></td>
+                            <td class="price" rowspan="2"><?php echo $info['sektor3_cena'].' zł' ?></td>
+                            <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                            <td rowspan="2">
+                                <input type="text" class="num" placeholder="0" name="num">
+                                <input type="hidden" name="cena" value="<?php echo $info['sektor3_cena'] ?>"/>
+                                <input type="hidden" name="ilosc" value="<?php echo $info['sektor3_ilosc'] ?>"/>
+                                <input type="hidden" name="nazwa" value="sektor3"/>
+                                <input type="hidden" name="id" value="<?php $_GET['koncert_id'] ?>"/>
+                            </td>
+                            <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="month">Sektor</td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Zamów">
+                    
+                </div>
+            </form>
             
-            <div class="event">
-                <table class="order">
-                    <tr>
-                        <td class="day">B1</td>
-                        <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
-                        <td rowspan="2"><div class="num">0</div></td>
-                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
-                    </tr>
-                    <tr>
-                        <td class="month">Sektor</td>
-                    </tr>
-                </table>
-                <button class="button">Zamów</button>
-            </div>
+            <form action="php/zamowienie.php" method="POST">
+                <div class="event">
+                    <table class="order">
+                        <tr>
+                            <td class="day"><?php echo $info['sektor4_nazwa'] ?></td>
+                            <td class="price" rowspan="2"><?php echo $info['sektor4_cena'].' zł' ?></td>
+                            <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                            <td rowspan="2">
+                                <input type="text" class="num" placeholder="0" name="num">
+                                <input type="hidden" name="cena" value="<?php echo $info['sektor4_cena'] ?>"/>
+                                <input type="hidden" name="ilosc" value="<?php echo $info['sektor4_ilosc'] ?>"/>
+                                <input type="hidden" name="nazwa" value="sektor4"/>
+                                <input type="hidden" name="id" value="<?php $_GET['koncert_id'] ?>"/>
+                            </td>
+                            <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="month">Sektor</td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Zamów">
+                    
+                </div>
+            </form>
             
-            <div class="event">
-                <table class="order">
-                    <tr>
-                        <td class="day">B2</td>
-                        <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
-                        <td rowspan="2"><div class="num">0</div></td>
-                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
-                    </tr>
-                    <tr>
-                        <td class="month">Sektor</td>
-                    </tr>
-                </table>
-                <button class="button">Zamów</button>
-            </div>
-            
-            <div class="event">
-                <table class="order">
-                    <tr>
-                        <td class="day">VIP</td>
-                        <td class="price" rowspan="2">200 zł</td>
-                        <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
-                        <td rowspan="2"><div class="num">0</div></td>
-                        <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
-                    </tr>
-                    <tr>
-                        <td class="month">Sektor</td>
-                    </tr>
-                </table>
-                <button class="button">Zamów</button>
-            </div>
+            <form action="php/zamowienie.php" method="POST">
+                <div class="event">
+                    <table class="order">
+                        <tr>
+                            <td class="day"><?php echo $info['sektor5_nazwa'] ?></td>
+                            <td class="price" rowspan="2"><?php echo $info['sektor5_cena'].' zł' ?></td>
+                            <td class="btn_plus" rowspan="2"><button class="button">-</button></td>
+                            <td rowspan="2">
+                                <input type="text" class="num" placeholder="0" name="num">
+                                <input type="hidden" name="cena" value="<?php echo $info['sektor5_cena'] ?>"/>
+                                <input type="hidden" name="ilosc" value="<?php echo $info['sektor5_ilosc'] ?>"/>
+                                <input type="hidden" name="nazwa" value="sektor5"/>
+                                <input type="hidden" name="id" value="<?php $_GET['koncert_id'] ?>"/>
+                            </td>
+                            <td class="btn_minus" rowspan="2"><button class="button">+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="month">Sektor</td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Zamów">
+                    
+                </div>
+            </form>
             
             <p>
-            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+            <?php echo $dane['opis'] ?></p>
         </div>
         <aside class="sidebar">
             
@@ -109,3 +152,15 @@
     </div>
 <hr style="width: 90%; clear: both; visibility: hidden;" />
 <?php include 'footer.php' ?>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

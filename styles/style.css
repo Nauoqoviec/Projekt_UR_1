@@ -426,10 +426,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .order .num{
+    width: 50px;
     padding: 15px;
     background-color: #000;
     border-radius: 5px;
     border: 1px solid #272727;
     margin: 0px 10px;
     text-align: center;
+    color: #fff;
 }
